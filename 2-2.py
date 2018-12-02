@@ -1,7 +1,4 @@
 
-twoof = 0
-threeof = 0
-
 with open('data2-1.txt', 'r') as data_file:
     lines = [line.strip() for line in data_file.readlines()]
 
