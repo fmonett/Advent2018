@@ -14,18 +14,17 @@ def do_reaction(strd):
             
     return "".join(stack)
 
-min = len(strd)    
+minlen = len(strd)    
 for i in range (ord('a'),ord('z') + 1):
     tempstr = strd.replace(chr(i),"")
     tempstr = tempstr.replace(chr(i).upper(),"")
     
    
     res = do_reaction(tempstr)
-    if(len(res)) < min:
-        min = len(res)
+    minlen = min(minlen,len(res))
         
         
-print min
+print minlen
         
     
     
